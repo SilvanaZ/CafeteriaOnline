@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Pacifico&family=Poppins&display=swap");
+:root {
+  --lightColor: #e6c0b3;
+  --darkColor: #594b46;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/images/background.jpg") center center;
+  background-size: cover;
+}
+nav, footer{
+  height: 10vh;
+}
+.view-container {
+  height: 80vh 
+}
+.btn-outline-brown{
+  border: 1px solid var(--darkColor);
+  transition: 0.5s;
+}
+.btn-outline-brown:hover{
+  border: none;
+  color: var(--lightColor);
+  background-color: var(--darkColor);
+}
+@media screen and (max-width: 768px){
+  .main-container{
+    font-size: 14px;
+  }
+}
